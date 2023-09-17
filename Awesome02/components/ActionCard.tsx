@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   },
   card: {
     width: 350,
-    height: 340,
+    height: 360,
     borderRadius: 6,
     marginVertical: 12,
     marginHorizontal: 9,
@@ -86,7 +86,21 @@ const styles = StyleSheet.create({
   cardImage: {
     height: 190,
   },
-  cardContainer: {},
-  footerContainer: {},
-  socialLinks: {},
+  cardContainer: {
+    padding: 10,
+  },
+  footerContainer: {
+    padding: 8,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+  },
+  socialLinks: {
+    fontSize: 16,
+    color: '#252525',
+    backgroundColor: '#fff',
+    paddingHorizontal: 20,
+    paddingVertical: 6,
+    borderRadius: 6,
+  },
 });
