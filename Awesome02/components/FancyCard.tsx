@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
   },
   cardElevated: {
-    backgroundColor: '#fff',
+    backgroundColor: '#e8dfdf',
     elevation: 3,
     shadowOffset: {width: 1, height: 1},
   },
