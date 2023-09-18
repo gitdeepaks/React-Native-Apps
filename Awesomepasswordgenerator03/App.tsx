@@ -28,7 +28,7 @@ const App = () => {
   const [isNumber, setIsNumber] = useState(false);
   const [isSymbol, setIsSymbol] = useState(false);
 
-  const generatePasswordString = passwordLength => {
+  const generatePasswordString = (passwordLength: number) => {
     let charList = '';
     const upperCaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const lowerCaseChars = 'abcdefghijklmnopqrstuvwxyz';
