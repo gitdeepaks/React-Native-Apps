@@ -13,7 +13,7 @@ export default App;
 
 const styles = StyleSheet.create({
   main: {
-    color: 'red',
+    color: '#da3be0',
     fontSize: 30,
     justifyContent: 'center',
     alignItems: 'center',
