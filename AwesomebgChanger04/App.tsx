@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 
 function App(): JSX.Element {
-  const [color, setColor] = useState('#000000');
+  const [color, setColor] = useState('#fff');
 
   const handleColor = () => {
     const hexRange = '0123456789ABCDEF';
