@@ -21,6 +21,11 @@ import DiceSix from '../assets/Six.png';
 
 type DiceProps = PropsWithChildren<{imgUrl: ImageSourcePropType}>;
 
+const options = {
+  enableVibrateFallback: true,
+  ignoreAndroidSystemSettings: false,
+};
+
 const Dice = ({imgUrl}: DiceProps): JSX.Element => {
   return (
     <View>
@@ -57,6 +62,7 @@ const App = (): JSX.Element => {
         setDiceImge(DiceOne);
         break;
     }
+    ReactNativeHapticFeedback.trigger('impactLight', options);
   };
   return (
     <SafeAreaView style={styles.container}>
