@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {
   FlatList,
-  Keyboard,
   Pressable,
   SafeAreaView,
   StatusBar,
