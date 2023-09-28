@@ -22,7 +22,7 @@ export default SongInfo;
 const styles = StyleSheet.create({
   container: {
     width: '90%',
-    marginTop: 18,
+    marginTop: 32,
     flexDirection: 'row',
     alignItems: 'baseline',
     justifyContent: 'center',
@@ -31,8 +31,8 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     textAlign: 'center',
     color: '#fff',
-    fontSize: 24,
-    fontWeight: '800',
+    fontSize: 12,
+    fontWeight: '500',
   },
   artist: {
     color: '#d9d9d9',

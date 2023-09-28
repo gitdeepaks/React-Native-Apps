@@ -1,15 +1,11 @@
 import React, {useState, useEffect} from 'react';
 
-import type {PropsWithChildren} from 'react';
+// import type {PropsWithChildren} from 'react';
 import {
   ActivityIndicator,
   SafeAreaView,
-  ScrollView,
   StatusBar,
   StyleSheet,
-  Text,
-  useColorScheme,
-  View,
 } from 'react-native';
 
 import {setUpPlayer, addTracks} from '../musicLayerServices';
@@ -41,10 +37,10 @@ function App(): JSX.Element {
   }
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <StatusBar barStyle={'light-content'} />
       <MusicPlayer />
-    </View>
+    </SafeAreaView>
   );
 }
 
