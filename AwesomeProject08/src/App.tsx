@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+
 import type {PropsWithChildren} from 'react';
 import {
   ActivityIndicator,
@@ -12,39 +13,39 @@ import {
 } from 'react-native';
 
 import {setUpPlayer, addTracks} from '../musicLayerServices';
+import MusicPlayer from './screens/MisicPlayer';
 
 function App(): JSX.Element {
-  const [isPlayerREady, setIsPlayerReady] = useState(false);
+  const [isPlayerReady, setIsPaylerReady] = useState(false);
 
-  async function setUpPlayer() {
-    let isSetUp = await setUpPlayer();
+  async function setup() {
+    let isSetup = await setUpPlayer();
 
-    if (isSetUp) {
+    if (isSetup) {
       await addTracks();
     }
 
-    setIsPlayerReady(isSetUp);
+    setIsPaylerReady(isSetup);
   }
 
   useEffect(() => {
-    setUpPlayer();
+    setup();
   }, []);
 
-  if (!isPlayerREady) {
+  if (!isPlayerReady) {
     return (
       <SafeAreaView>
         <ActivityIndicator />
-        <Text>Loading...</Text>
       </SafeAreaView>
     );
   }
 
-  // return (
-  //   <SafeAreaView>
-  //     <StatusBar />
-  //     <Text>Test</Text>
-  //   </SafeAreaView>
-  // );
+  return (
+    <View style={styles.container}>
+      <StatusBar barStyle={'light-content'} />
+      <MusicPlayer />
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
