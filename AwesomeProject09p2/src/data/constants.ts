@@ -55,4 +55,20 @@ export const PRODUCTS_LIST: Product[] = [
       '15.49 cm (6.1 inch) Super Retina XDR Display',
     ],
   },
+  {
+    id: '5',
+    name: 'APPLE iPhone 11Pro (White, 64 GB)',
+    imageUrl:
+      'https://rukminim1.flixcart.com/image/300/400/k2jbyq80pkrrdj/mobile-refurbished/k/y/d/iphone-11-256-u-mwm82hn-a-apple-0-original-imafkg25mhaztxns.jpeg',
+    originalPrice: 43900,
+    discountPrice: 38999,
+    offerPercentage: 11,
+    rating: 4.6,
+    ratingCount: 180810,
+    tags: [
+      '12MP Front Camera',
+      '12MP Dual Rear Camera',
+      '15.49 cm (6.1 inch) Super Retina XDR Display',
+    ],
+  },
 ];
