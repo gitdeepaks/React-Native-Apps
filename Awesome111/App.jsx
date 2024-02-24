@@ -1,10 +1,16 @@
 import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import {Button, SafeAreaView, Text, View} from 'react-native';
+import useToggle from './customHooks/useToggle';
 
 const App = () => {
+  const [isOn, setIsOn] = useToggle(false);
+
   return (
     <SafeAreaView>
-      <Text>My App</Text>
+      <View>
+        <Text>{isOn ? 'ON' : 'OFF'}</Text>
+        <Button title={'Toggle Button'} onPress={setIsOn} />
+      </View>
     </SafeAreaView>
   );
 };
