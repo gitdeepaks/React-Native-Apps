@@ -5,6 +5,9 @@ const ScrolView = () => {
   return (
     <View>
       <ScrollView
+        onScroll={() => {
+          console.log('first scroll');
+        }}
         showsVerticalScrollIndicator={true}
         horizontal={true}
         showsHorizontalScrollIndicator={true}>
